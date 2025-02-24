@@ -2,13 +2,13 @@
 
 <p>
     <a href="https://www.python.org/downloads/">
-            <img alt="Build" src="https://img.shields.io/badge/3.10-Python-blue">
+            <img alt="Build" src="https://img.shields.io/badge/3.12-Python-blue">
     </a>
     <a href="https://pytorch.org">
-            <img alt="Build" src="https://img.shields.io/badge/1.11-PyTorch-orange">
+            <img alt="Build" src="https://img.shields.io/badge/2.6.0-PyTorch-orange">
     </a>
-    <a href="https://github.com/pytorch/opacus">
-            <img alt="Build" src="https://img.shields.io/badge/1.12-opacus-orange">
+    <a href="https://huggingface.co/">
+        <img alt="Hugging Face" src="https://img.shields.io/badge/Hugging%20Face-transformers-yellow">
     </a>
 </p>
 
