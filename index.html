@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimizing Adaptive Attacks against Watermarks for Language Models</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Optimizing Adaptive Attacks against Watermarks for Language Models</h1>
+            <div class="authors">
+                <!-- You can update these with actual author names once published -->
+                <p class="author-list">Abdulrahman Diaa, Toluwani Aremu, and Nils Lukas<sup>1</sup></p>
+                <p class="author-affiliation"><sup>1</sup>University of Waterloo, Canada</p>
+                <p class="author-affiliation"><sup>2</sup>MBZUAI, UAE</p>
+                <p class="author-contact">Correspondence to: Abdulrahman Diaa &lt;abdulrahman.diaa@uwaterloo.ca&gt;</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="paper-info">
+            <div class="buttons">
+                <a href="https://arxiv.org/abs/2410.02440" class="button" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                <a href="https://github.com/nilslukas/ada-wm-evasion" class="button" target="_blank"><i class="fab fa-github"></i> Code</a>
+                <!-- Add arXiv link once available -->
+                <a href="#" class="button" target="_blank"><i class="fas fa-archive"></i> arXiv</a>
+            </div>
+        </section>
+
+        <section class="abstract">
+            <h2>Abstract</h2>
+            <p>
+                Large Language Models (LLMs) can be misused to spread online spam and misinformation. Content watermarking deters misuse by hiding a message in generated outputs, enabling detection using a secret watermarking key. Robustness is a core security property, stating that evading detection requires (significant) degradation of the content's quality. Many LLM watermarking methods have been proposed, but robustness is tested only against non-adaptive attackers who lack knowledge of the provider's watermarking method and can find only suboptimal attacks. We formulate the robustness of LLM watermarking as an objective function and use preference-based optimization to tune adaptive attacks against the specific watermarking method. Our evaluation shows that (i) adaptive attacks evade detection against all surveyed watermarking methods. (ii) Even in a non-adaptive setting, attacks optimized adaptively against known watermarks remain effective when tested on unseen watermarks, and (iii) optimization-based attacks are scalable and use limited computational resources of less than seven GPU hours. Our findings underscore the need to test robustness against adaptive attacks.
+            </p>
+        </section>
+
+        <section class="overview">
+            <h2>Overview</h2>
+            <div class="figure-container">
+                <figure>
+                    <img src="assets/teaser.pdf" alt="Adaptive attackers know the watermarking algorithms (KEYGEN, VERIFY), but not the secret key, so they can optimize a paraphraser against a specific watermark." class="main-figure">
+                    <figcaption>Figure 1: Adaptive attackers know the watermarking algorithms (KEYGEN, VERIFY), but not the secret key, so they can optimize a paraphraser against a specific watermark.</figcaption>
+                </figure>
+            </div>
+            
+            <h3>Key Contributions</h3>
+            <ol>
+                <li>We propose methods to curate preference-based datasets using LLMs, enabling us to adaptively fine-tune watermark evasion attacks against four state-of-the-art language watermarks.</li>
+                <li>Adaptively tuned paraphrasers with 0.5-7 billion parameters evade detection from all tested watermarks at a negligible impact on text quality.</li>
+                <li>We test our attacks in the non-adaptive setting against unseen watermarks and demonstrate that they remain Pareto optimal compared to other non-adaptive attacks.</li>
+                <li>We will publicly release our source code and adaptively tuned paraphrasers to facilitate further research on robustness against adaptive attackers.</li>
+            </ol>
+        </section>
+
+        <section class="cite">
+            <h2>Citation</h2>
+            <div class="citation-box">
+                <pre><code>@article{anonymous2024optimizing,
+  title={Optimizing Adaptive Attacks against Watermarks for Language Models},
+  author={Diaa, Abdulrahman and Aremu, Toluwani and Lukas, Nils},
+  journal={arXiv preprint arXiv:2410.02440},
+  year={2024}
+}</code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 | Currently under review by the International Conference on Machine Learning (ICML).</p>
+        </div>
+    </footer>
+</body>
+</html>
