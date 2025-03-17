@@ -249,6 +249,16 @@ h2 {
   z-index: 10;
 }
 
+.slide-counter {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
 .carousel-button:hover {
   background: rgba(255, 255, 255, 1);
 }
