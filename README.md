@@ -22,10 +22,12 @@ Currently, we only release the suite of adaptively tuned paraphrasing models tha
 Please consider citing the following paper if you found our work useful.
 
 ```
-@article{diaa2024optimizing,
-  title={Optimizing adaptive attacks against content watermarks for language models},
-  author={Diaa, Abdulrahman and Aremu, Toluwani and Lukas, Nils},
-  journal={arXiv preprint arXiv:2410.02440},
-  year={2024}
+@inproceedings{
+diaa2025optimizing,
+title={Optimizing Adaptive Attacks against Watermarks for Language Models},
+author={Abdulrahman Diaa, Toluwani Aremu and Nils Lukas},
+booktitle={Forty-second International Conference on Machine Learning},
+year={2025},
+url={https://openreview.net/forum?id=AsODat0dkE}
 }
 ```
